@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>fries</title>
+		<link rel="stylesheet" type="text/css" href="interface.css" />
+	</head>
+		<body>
+			<h1>cool game my dudes</h1>
+			<p class="stuff">hunger: <span class = "stuff" id = "hungerNumber"></span>/13
+			<p class = "coolerstuff"> hydration: <span class = "coolerstuff" id = "hydrationNumber"></span>/13
+			<div id = "main" class = "tabcontent">
+				<button class = "saveTab" id = "savesTab" onclick = "openTab(event, 'saves')">save stuff</button><br><br>
+				<button class = "hunger" onClick="hungerplus(1)" type="button">+1</button>
+				<button class = "hunger" onClick="hungerplus(-1)" type="button">-1</button>
+				<br><br>
+				<div id="hprogress">
+				<div id="hbar"></div>
+				</div>
+				<br><br>
+				<button class = "hydration" onClick="hydrationplus(1)" type="button">+1</button>
+				<button class = "hydration" onClick="hydrationplus(-1)" type="button">-1</button>
+				<br><br>
+				<div id="progress">
+				<div id="bar"></div>
+				</div>
+				<br><br>
+			</div>
+			<div id = "saves" class = "tabcontent">
+				<button class = "Column2" id = "mainTab" onclick = "openTab(event, 'main')">return</button>
+				<br>
+				<br>
+				<button class = "Column1" onClick="importSave()" type="button">import</button>
+				<button class = "Column1" onClick="copySave()" type="button">export</button>
+				<button class = "Column1" onClick="resetGame()" type="button">reset</button>
+			</div>
+				<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
